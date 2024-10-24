@@ -7,7 +7,7 @@ import org.apache.commons.math3.random.MersenneTwister;
 public class Random {
     public static void calculateAndWriteIntegrals(MersenneTwister mt, double a, double b, double max, int k,int FunctionType, String fileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true))) {
-            writer.write("Funkcja f(x)=cbrt(x) dla x∈[0,8]");
+            writer.write("n;wynik;");
             writer.newLine();
             for (int n = 50; n <= 5000; n += 50) {
                 for (int j = 0; j < k; j++) {
